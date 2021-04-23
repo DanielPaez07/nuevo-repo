@@ -3,17 +3,20 @@ import javax.swing.JApplet;
 import javax.swing.JFrame;
 
 public class Circulo extends JApplet {
-  int i=100, j=70,o1,o2,c;
+  int i=100, j=70;
+  double r,o1,o2,c;
   public void paint (Graphics g) {
     g.drawString (".", 100, 100);//centro
     for (i=0;i<=200;i++)
     {
       for (j=0;j<=200;j++)
       {
-        o1=(i-100)*(i-100);
-        o2=(j-100)*(j-100);
+        //Formula general de una circunferencia
+        o1=Math.pow((i-100),2);
+        o2=Math.pow((j-100),2);
         c=o1+o2;
-        if (c==900)
+        r= Math.sqrt(c);
+        if (r==30)
         {
           g.drawString (".", i, j);
         }
