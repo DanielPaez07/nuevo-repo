@@ -16,7 +16,7 @@ public class Circulo extends JApplet {
         o2=Math.pow((j-100),2);
         c=o1+o2;
         r= Math.sqrt(c);
-        if (r==40)
+        if (r<=60)
         {
           g.drawString (".", i, j);
         }
