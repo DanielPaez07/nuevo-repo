@@ -19,6 +19,7 @@ public class Circulo extends JApplet {
         if (r<=60)
         {
           g.drawString (".", i, j);
+          g.setColor(Color.cyan);
         }
       }
     }
