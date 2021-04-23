@@ -3,7 +3,7 @@ import javax.swing.JApplet;
 import javax.swing.JFrame;
 
 public class Circulo extends JApplet {
-  int i=100, j=70;
+  int i, j;
   double r,o1,o2,c;
   public void paint (Graphics g) {
     g.drawString (".", 100, 100);//centro
@@ -23,7 +23,6 @@ public class Circulo extends JApplet {
       }
     }
   }
-
   public static void main (String[] args){
     JFrame frame = new JFrame ("Circulo");
     Circulo circuloApplet = new Circulo();
