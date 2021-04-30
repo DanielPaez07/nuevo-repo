@@ -14,7 +14,7 @@ yInicial) {
  diametro = diametro + cambio;
  }
  public void mostrar (Graphics g) {
- g.setColor(Color.magenta);
+ g.setColor(Color.blue);
  g.drawOval (xCoord, yCoord, diametro, diametro);
  }
 

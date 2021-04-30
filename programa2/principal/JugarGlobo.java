@@ -52,7 +52,7 @@ public class JugarGlobo extends JApplet implements ActionListener {
 
 
 
- if (event.getSource() == reducir5){
+ if (event.getSource() == reducir){
   if (a==2&&b==1){
    miGlobo2.cambiarTamaño(-10);
   }
